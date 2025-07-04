@@ -1,4 +1,6 @@
-# Animate total price when it changes .cart-total.animated {
+/* Animate total price when it changes */
+
+.cart-total.animated {
   background: #e0ffe0;
   transition: background 0.5s;
 }

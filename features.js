@@ -1,3 +1,27 @@
+// Animate total price when it changes
+function updateTotal() {
+  const cartItems = document.querySelectorAll(".cart-product");
+  let total = 0;
+
+  cartItems.forEach((item) => {
+    const price = parseFloat(
+      item.querySelector(".price").textContent.replace(/[^\d.]/g, "")
+    );
+    const quantity = parseInt(item.querySelector(".quantity").textContent);
+    total += price * quantity;
+  });
+
+  const totalPriceElement = document.getElementById("total-price");
+  totalPriceElement.textContent = `Ksh ${total.toFixed(2)}`;
+
+  const totalContainer = document.querySelector(".cart-total");
+  totalContainer.classList.add("animated");
+
+  // Remove animation class after 500ms to reset it
+  setTimeout(() => {
+    totalContainer.classList.remove("animated");
+  }, 500);
+}
 // Add to Cart functionality
 document.addEventListener("DOMContentLoaded", function () {
   const cartItemDiv = document.querySelector(".cart-item");
@@ -24,11 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // Animate total price
     cartTotal.classList.add("animated");
-    cartTotal.textContent = `Ksh ${total.toFixed(2)}`;
-    setTimeout(() => {
-      cartTotal.classList.remove("animated");
-    }, 500);
-
+    updateTotal();
     // Add event listeners for plus and minus buttons
     cartItemDiv.querySelectorAll(".plus-btn").forEach((btn) => {
       btn.addEventListener("click", function () {
