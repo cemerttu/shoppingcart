@@ -1,0 +1,164 @@
+/* Style for the cart item container */
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 24px 16px;
+  margin: 32px auto;
+  width: 260px;
+}
+
+/* Style for the product image */
+.product-image {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+/* Style for the product name */
+.item-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Style for the price */
+.price {
+  font-size: 1.1rem;
+  color: #2d8f5a;
+  margin-bottom: 12px;
+}
+
+/* Quantity controls styling */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.quantity-controls button {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: background 0.2s;
+}
+.quantity-controls button:hover {
+  background: #bdbdbd;
+}
+.quantity {
+  font-size: 1.1rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Like and delete button styling */
+.like-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin: 0 6px;
+  transition: transform 0.15s;
+}
+.like-btn:hover {
+  color: #e74c3c;
+  transform: scale(1.2);
+}
+.delete-btn:hover {
+  color: #de6b5c;
+  transform: scale(1.2);
+}
+
+/* Cart total styling */
+.cart-total {
+  margin-top: 24px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+#total-price {
+  font-weight: bold;
+  color: #2d8f5a;
+  font-size: 1.2rem;
+}
+/* .liked {
+  color: red;
+} */
+
+/* .navbar-brand {
+  color: green !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 50px 0;
+}
+.total-price span {
+  font-size: 30px;
+}
+
+.total {
+  font-weight: bold;
+}
+.list-products {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 70%;
+}
+.card {
+  padding: 5%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 25px;
+}
+
+.card-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.fa-trash-alt {
+  color: #de6b5c;
+}
