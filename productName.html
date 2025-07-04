@@ -8,43 +8,39 @@
 </head>
 </head>
 <body>
-    <div class="cart-item">
-        <div class="product-block">
+    <div class="product-list">
+        <div class="product-block" data-name="Socks" data-price="2500" data-img="image/socks.png">
             <img src="image/socks.png" alt="Socks" class="product-image">
             <span class="item-name">Socks</span>
-            <span class="price">$25</span>
+            <span class="price">Ksh 2500</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-        <div class="product-block">
+        <div class="product-block" data-name="Bag" data-price="4000" data-img="image/bag.png">
             <img src="image/bag.png" alt="Bag" class="product-image">
             <span class="item-name">Bag</span>
-            <span class="price">$40</span>
+            <span class="price">Ksh 4000</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-        <div class="product-block">
+        <div class="product-block" data-name="Baskets" data-price="3000" data-img="image/baskets.png">
             <img src="image/baskets.png" alt="Baskets" class="product-image">
             <span class="item-name">Baskets</span>
-            <span class="price">$30</span>
+            <span class="price">Ksh 3000</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-        <div class="product-block">
-            <img src="image/baskets copy.png" alt="Baskets Copy" class="product-image">
-            <span class="item-name">Baskets Copy</span>
-            <span class="price">$35</span>
+        <div class="product-block" data-name="Necklace" data-price="3500" data-img="image/necklace.webp">
+            <img src="image/necklace.webp" alt="Necklace" class="product-image">
+            <span class="item-name">Necklace</span>
+            <span class="price">Ksh 3500</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-        <div class="product-block">
-            <img src="image/delete.png" alt="Delete Icon" class="product-image" style="width:40px;">
-            <span class="item-name">Delete Icon</span>
-            <span class="price">$10</span>
-        </div>
-        <div class="quantity-controls">
-            <button class="minus-btn">-</button>
-            <span class="quantity">1</span>
-            <button class="plus-btn">+</button>
-        </div>
-        <button class="like-btn">❤️</button>
-        <button class="delete-btn">🗑️</button>
     </div>
-    
-    <div class="cart-total">
-        Total: <span id="total-price">$0.00</span>
+    <div class="cart-summary-row">
+        <div class="cart-item">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            Total: <span id="total-price">$0.00</span>
+        </div>
     </div>
     
 <script src="features.js"></script>
